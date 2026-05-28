@@ -1,0 +1,478 @@
+**DailyOS (OS-style life dashboard)** using:
+
+* HTML
+* CSS
+* JavaScript
+* Firebase (Auth + Firestore)
+
+This prompt is structured like a **real software engineering spec**, so AI will generate clean, scalable code.
+
+---
+
+# 🚀 FULL CURSOR AI PROMPT — DailyOS (OS Style Life System)
+
+Copy everything below 👇
+
+---
+
+## 🧠 PROJECT PROMPT
+
+You are a senior frontend engineer, UI/UX designer, and Firebase architect.
+
+Build a **premium OS-style personal life operating system web app** called:
+
+# DAILYOS
+
+It should feel like a combination of:
+
+* macOS desktop UI
+* Windows 11 Fluent UI
+* Apple VisionOS glass UI
+* Notion workspace
+* Linear dashboard
+* Arc browser OS feel
+
+---
+
+# 🎯 CORE GOAL
+
+Create a **fully working browser-based operating system UI**, where:
+
+* Apps open in draggable windows
+* Desktop acts as workspace
+* Dock behaves like macOS dock
+* Widgets float on desktop
+* Everything syncs with Firebase
+* Data persists per user
+
+---
+
+# 🧱 TECH STACK (STRICT)
+
+Use ONLY:
+
+* HTML5
+* CSS3 (modern, no frameworks)
+* Vanilla JavaScript (ES6 modules allowed)
+* Firebase v10 (modular SDK)
+
+No React, no frameworks.
+
+---
+
+# ☁ FIREBASE REQUIREMENTS
+
+Implement Firebase fully:
+
+## 1. Authentication
+
+* Google Login
+* Email/Password Login
+* Guest mode optional
+
+## 2. Firestore Database
+
+Structure:
+
+```
+users/{uid}
+   profile
+
+habits/{uid}
+   list of habits
+
+tasks/{uid}
+   daily tasks
+
+notes/{uid}
+   notes data
+
+expenses/{uid}
+   expense records
+
+goals/{uid}
+   life goals
+
+settings/{uid}
+   theme, preferences
+```
+
+## 3. Real-time sync
+
+* Any update instantly syncs to Firestore
+* Auto-load on login
+
+---
+
+# 🖥 OS UI ARCHITECTURE
+
+Build a REAL OS-like interface:
+
+---
+
+## 1. BOOT SCREEN (LOADING ANIMATION)
+
+On startup show:
+
+* “Booting DailyOS…”
+* Loading animation bar
+* Firebase connection check
+* Then enter desktop
+
+---
+
+## 2. DESKTOP SCREEN (MAIN UI)
+
+Desktop includes:
+
+### 🌄 Background
+
+* Soft gradient wallpaper
+* Dynamic based on time (morning/day/evening/night)
+
+---
+
+### 📌 TOP BAR (LIKE macOS)
+
+Contains:
+
+* DailyOS logo (left)
+* Search bar (center - Spotlight search)
+* Time + date (right)
+* Notification icon
+* User profile avatar
+
+---
+
+### 🧭 DOCK (BOTTOM CENTER)
+
+Mac-style animated dock:
+
+Apps:
+
+* Dashboard
+* Habits
+* Calendar
+* Notes
+* Finance
+* Goals
+* Analytics
+* Settings
+
+Features:
+
+* Hover magnification effect
+* Active app indicator
+* Smooth animation
+
+---
+
+### 🪟 WINDOW SYSTEM (VERY IMPORTANT)
+
+Every app opens as a:
+
+* draggable window
+* resizable window
+* minimizable
+* closable
+* stackable z-index system
+
+Windows must behave like OS apps.
+
+---
+
+# 📱 APPS TO BUILD INSIDE DAILYOS
+
+---
+
+## 1. 📊 Dashboard App (HOME)
+
+Show:
+
+* Life progress bar (year/month/day)
+* Habit completion
+* Steps (manual input)
+* Water tracker
+* Sleep tracker
+* Quick stats cards
+
+---
+
+## 2. ✅ Habits App
+
+Features:
+
+* Add habits
+* Mark complete
+* Streak counter
+* Daily reset logic (midnight reset)
+* Firebase sync
+
+---
+
+## 3. 📝 Notes App
+
+Features:
+
+* Create notes
+* Edit notes
+* Delete notes
+* Folder system
+* Auto-save to Firebase
+
+---
+
+## 4. 💰 Finance App
+
+Features:
+
+* Add expense
+* Category dropdown
+* Total spending
+* Daily/monthly reset
+* Pie chart visualization
+
+---
+
+## 5. 🎯 Goals App
+
+Features:
+
+* Add goals
+* Progress tracking %
+* Completion status
+* Streak tracking
+
+---
+
+## 6. 📅 Calendar App
+
+Features:
+
+* Monthly view
+* Event creation
+* Daily reminders
+
+---
+
+## 7. 📈 Analytics App
+
+Show charts:
+
+* Habit completion graph
+* Spending graph
+* Sleep graph
+* Productivity score
+
+Use Chart.js
+
+---
+
+## 8. ⚙ Settings App
+
+Features:
+
+* Theme toggle (light mode only initially)
+* Accent color selector
+* Reset data
+* Logout
+
+---
+
+# 🎨 UI DESIGN SYSTEM (VERY IMPORTANT)
+
+## Style:
+
+* Ultra premium white OS design
+* Glassmorphism
+* Soft shadows
+* Blur effects
+* Rounded corners (16px–28px)
+
+---
+
+## Colors:
+
+```
+Background: #F5F7FB
+Card: rgba(255,255,255,0.7)
+Primary: #4F46E5
+Accent: #06B6D4
+Text: #111827
+Muted: #6B7280
+Border: rgba(0,0,0,0.05)
+```
+
+---
+
+## Effects:
+
+* backdrop-filter: blur(20px)
+* smooth transitions (0.3s)
+* hover lift effect
+* animated buttons
+* glowing active app indicator
+
+---
+
+# 🧠 OS FEATURES (IMPORTANT)
+
+## 1. WINDOW DRAGGING
+
+Implement:
+
+* mouse drag support
+* touch support
+* boundary constraints
+
+---
+
+## 2. Z-INDEX SYSTEM
+
+Active window always on top.
+
+---
+
+## 3. SPOTLIGHT SEARCH (CMD + K)
+
+Search:
+
+* apps
+* notes
+* habits
+* goals
+
+---
+
+## 4. LOCAL STORAGE FALLBACK
+
+Before Firebase sync:
+
+* store locally
+* then sync cloud
+
+---
+
+## 5. AUTO DAILY RESET SYSTEM
+
+At midnight:
+
+Reset:
+
+* habits
+* water
+* sleep
+* steps
+* daily expenses
+
+---
+
+## 6. NOTIFICATION SYSTEM
+
+Toast notifications:
+
+* "Habit completed"
+* "Goal achieved"
+* "Expense added"
+
+---
+
+# 📁 PROJECT STRUCTURE
+
+```
+/DailyOS
+ ├── index.html
+ ├── style.css
+ ├── app.js
+ ├── firebase.js
+ ├── ui/
+ │    ├── windowManager.js
+ │    ├── dock.js
+ │    ├── topbar.js
+ ├── apps/
+ │    ├── dashboard.js
+ │    ├── habits.js
+ │    ├── notes.js
+ │    ├── finance.js
+ │    ├── goals.js
+ │    ├── calendar.js
+ │    ├── analytics.js
+ ├── assets/
+ │    ├── icons
+ │    ├── wallpapers
+```
+
+---
+
+# ⚡ JAVASCRIPT ARCHITECTURE
+
+Use modular structure:
+
+* App Manager
+* Window Manager
+* Firebase Service Layer
+* State Manager
+* UI Renderer
+
+---
+
+# 🔥 ADVANCED FEATURES (OPTIONAL BUT RECOMMENDED)
+
+## 1. AI Assistant Panel
+
+* floating chat window
+* suggests daily improvements
+
+## 2. Focus Mode
+
+* full-screen distraction-free mode
+
+## 3. Productivity Score
+
+* calculated daily score
+
+## 4. Gamification
+
+* XP system
+* streak badges
+
+---
+
+# 📱 RESPONSIVE REQUIREMENTS
+
+Must work on:
+
+* Desktop (full OS experience)
+* Tablet (iPad style)
+* Mobile (stacked windows)
+
+---
+
+# 🚀 FINAL OUTPUT EXPECTATION
+
+Generate a:
+
+* fully working HTML/CSS/JS project
+* Firebase integrated
+* OS-style UI
+* modular app system
+* production-level clean code
+
+---
+
+# 💎 IMPORTANT
+
+Do NOT simplify UI.
+
+Do NOT use frameworks.
+
+Focus on:
+
+* realism
+* smooth OS experience
+* premium UI polish
+* animations
+* interaction design
+
+---
+
